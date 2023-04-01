@@ -6,9 +6,9 @@ html{
     --light: #202020;
     --color-text: #ffffff;
     --box-shadow: 
-    5px 5px 15px #646464, 
-    -5px -5px 15px #414141;
-    --gradient-bg: linear-gradient(90deg, #f947ff, #7700ff, #1bcafa);
+    5px 5px 15px #ffffff, 
+    -5px -5px 15px #46464671;
+    --gradient-bg: linear-gradient(90deg, #f704ff, #7700ff, #1bcafa);
 }
 a{
     color: #ffffff;
@@ -87,24 +87,6 @@ header ul li{
     font-weight: 500;
 }
 
-/* .job::before{
-    content: attr(data-job1);
-    overflow: hidden;
-    display: inline-flex;
-    animation: changeText 6s linear infinite;
-}
-
-@keyframes changeText{
-    0%{
-        content: attr(data-job1);
-    }
-    50%{
-        content: attr(data-job2);
-    }
-    100%{
-        content: attr(data-job3);
-    }
-} */
 .find{
     margin-top: 50px;
 }
@@ -134,19 +116,10 @@ header ul li{
     height: max-content;
     text-align: center;
 }
-/* .banner .avatar::before{
-    position: absolute;
-    width: 90%;
-    height: 80%;
-    content: '';
-    z-index: -1;
-    bottom: 0;
-    border-radius: 10px;
-    box-shadow: var(--box-shadow);
-} */
 .banner img{
     width: 90%;
     border-radius: 10px;
+    box-shadow: var(--box-shadow);
 }
 header .navDiv,
 header .nav label,
@@ -265,8 +238,8 @@ header input{
         justify-content: end;
     }
     header label{
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -277,13 +250,13 @@ header input{
         position: fixed;
         background-color: #000000a6;
         z-index: 1;
-        /* text-align: center; */
+        text-align: center;
         width: 60%;
         height: 98%;
         display: grid;
         border-radius: 10px;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 70px);
+        grid-template-rows: repeat(9, 90px);
         transform: translateX(-200%);
         transition: 0.5s;
     }
