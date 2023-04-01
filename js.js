@@ -35,8 +35,8 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Developer", "3D Visualizer", "Designer", "Freelancer"],
-        typeSpeed: 100,
+        strings: ["{ Developer }", "{ 3D Visualizer }", "{ Designer }", "{ Freelancer }", "{ Editer }"],
+        typeSpeed: 80,
         backSpeed: 60,
         loop: true
     });
@@ -58,8 +58,12 @@ $(document).ready(function(){
                 items: 2,
                 nav: false
             },
+            800:{
+                items: 4,
+                nav: false
+            },
             1000:{
-                items: 3,
+                items: 5,
                 nav: false
             }
         }
