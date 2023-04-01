@@ -125,7 +125,19 @@ header .navDiv,
 header .nav label,
 header input{
     display: none;
+
 }
+.nav li a {
+    transform: scale(1);
+}
+.nav a.is-active,
+.nav li:hover a {
+    color: #ff0000;
+    transform: scale(1.3);
+
+}
+
+
 .title{
     text-align: center;
     padding-top: 100px;
@@ -260,9 +272,12 @@ header input{
         transform: translateX(-200%);
         transition: 0.5s;
     }
+
     input#menu:checked ~ .nav{
         transform: translateX(-10%);
+        margin: auto;
     }
+
     .banner .content{
         padding-right: 0px;
     }
@@ -289,7 +304,7 @@ header input{
 }
 
 .zoom:hover{
-    transform:scale(1.1) ;
+    transform:scale(1.2) ;
     transform: 0.5s;
 }
 
@@ -303,4 +318,22 @@ img {
     text-align: center;
     padding-inline: center;
     padding: 5%;
+}
+
+.navDiv ul li {
+    transform: scale(1);
+    transition: 0.5s;
+    width: 100%;
+}
+
+.navDiv ul li:hover{
+    transform: scale(1.1);
+}
+.neu {
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.neu:hover{
+    transform: scale(1.2);
 }
